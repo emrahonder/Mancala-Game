@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  api:
+    build: ./
+    container_name: mancala-game-docker
+    ports:
+      - "8080:8080"
