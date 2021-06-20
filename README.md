@@ -44,9 +44,11 @@ From your favourite browser, you can access below URI and enjoy playing this gam
 ```  
 http://localhost:8080  
 ```
+![image](https://user-images.githubusercontent.com/2255525/122678946-75496580-d1f1-11eb-9b02-478d086606bf.png)
+
 
 ## Technical
-When I have got the assignment, firstly I thought that to save games, I should use a database or file or an in-memory cache, etc. But to decrease complexity and dependencies, I have decided to keep game data in a HashMap.
+When I decide to implement this game, firstly I thought that to save games, I should use a database or file or an in-memory cache, etc. But to decrease complexity and dependencies, I have decided to keep game data in a HashMap.
 
 The max capacity of a HashMap is 2^30 so for a simple game application, this will be enough. Sure, in every deployment or restart, existing games will be gone. But for this game, we can accept this problem.
 
