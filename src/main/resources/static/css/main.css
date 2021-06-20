@@ -1,0 +1,70 @@
+body {
+    padding-top: 75px;
+}
+
+#results {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid;
+}
+
+#player1 {
+    flex-direction: row-reverse;
+    background-color: #6dadf1;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #1E90FF;
+    padding: 15px;
+}
+
+.flex-container > div {
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.enabled {
+    cursor: pointer;
+    background-color: #f1f1f1;;
+}
+
+.disabled {
+    background-color: #6a6767;;
+}
+
+#treasury1 label, #treasury2 label {
+    font-size: 20px;
+    font-weight: bold;
+    width:100%;
+}
+
+#treasury1, #treasury2 {
+    background-color: #8caee7;;
+}
+
+#winner {
+    font-size: 25px;
+    display: none;
+}
+
+#start-game {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#show-hide-rules {
+    text-align: right;
+    text-decoration: underline;
+    margin-top: 17px;
+    cursor: pointer;
+}
+#rules{
+    display: none;
+}

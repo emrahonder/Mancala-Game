@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mancala Game Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Mancala Game</a>
+</nav>
+<main role="main" class="container">
+    <div id="turninfo"><b>Who's Turn? </b> <span></span></div>
+    <div id="winner"><b>Winner</b> <span></span></div>
+    <div id="main-board">
+        <div class="flex-container" id="player1">
+            <div></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div id="treasury1"><label>Treasury 1</label><span></span></div>
+        </div>
+        <div class="flex-container" id="player2">
+            <div class="treasuare">&nbsp;</div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div class="pit disabled"></div>
+            <div id="treasury2"><label>Treasury 2</label><span></span></div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="start-game">Start new game</button>
+
+    <div id="show-hide-rules">Show / Hide Rules</div>
+    <div id="rules">
+        <h3><strong>Board Setup</strong></h3>
+        <p>Each of the two players has his six pits in front of him. To the right of the six pits, each player has a
+            larger pit. At the start of the game, there are six stones in each of the six-round pits.&nbsp;</p>
+        <h4>Rules</h4>
+        <p><strong>Game Play</strong></p>
+        <p>The player who begins with the first move picks up all the stones in any of his own six pits and sows the
+            stones onto the right, one in each of the following pits, including his own big pit. No stones are put in
+            the opponents' big pit. If the player's last stone lands in his own big pit, he gets another turn. This can
+            be repeated several times before it's the other player's turn.&nbsp;</p>
+        <p><strong>Capturing Stones</strong></p>
+        <p>During the game, the pits are emptied on both sides. Always when the last stone lands in its own empty pit,
+            the player captures his own stone and all stones in the opposite pit (the other player&rsquo;s pit) and puts
+            them in his own (big or little?) pit.&nbsp;</p>
+        <p><strong>The Game Ends</strong></p>
+        <p>The game is over as soon as one of the sides runs out of stones. The player who still has stones in his pits
+            keeps them and puts them in his big pit. The winner of the game is the player who has the most stones in his
+            big pit.&nbsp;</p>
+
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
